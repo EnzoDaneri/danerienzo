@@ -52,7 +52,7 @@
   font-family: "Comfortaa", cursive;
  color: #333;
  margin-top: 30px;
- font-size: 20px;
+ font-size: 18px;
  padding: 20px;
 
 }

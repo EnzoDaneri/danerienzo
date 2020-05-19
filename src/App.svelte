@@ -2,22 +2,24 @@
   import { fly, fade} from 'svelte/transition';
   import Programacion from './Programacion.svelte';
   import Back from './Back.svelte'
-  import Compañia from './Compañia.svelte'
+  import Compania from './Compania.svelte'
   import Tips from './Tips.svelte'
   import Contacto from './Contacto.svelte'
   import Info from './Info.svelte'
+  import ContentManager from './ContentManager.svelte'
 
   let programacion = false
-  let compañia = false
+  let compania = false
   let tips = false
   let contacto = false
   let info = false
+  let contentManager = false
 
   const showProgramacion = () => {
 	  programacion = !programacion
   }
-  const showCompañia = () => {
-	  compañia = !compañia
+  const showCompania = () => {
+	  compania = !compania
   }
   const showTips = () => {
 	  tips = !tips
@@ -28,20 +30,24 @@
   const showInfo = () => {
 	  info = !info
   }
+  const showContentManager = () => {
+	  contentManager = !contentManager
+  }
 
 </script>
 
 
-{#if programacion == false && compañia == false && 
-tips == false && contacto == false && info == false}
+{#if programacion == false && compania == false && 
+tips == false && contacto == false && info == false
+&& contentManager == false}
 
 <div class="container"  in:fade>
 <div class="containerImg"><img src="./img/en.jpg" alt="Foto de Enzo Daneri"></div>
 <h1><span>Enzo</span> Daneri</h1>
 
 <div class="btn" on:click={showProgramacion}>Programador</div>
-<div class="btn" on:click={showCompañia}>Virtual Buddy</div>
-<div class="btn">Blog</div>
+<div class="btn" on:click={showCompania}>Virtual Buddy</div>
+<div class="btn" on:click={showContentManager}>Content Manager</div>
 
 
   <footer>
@@ -61,8 +67,8 @@ tips == false && contacto == false && info == false}
 
 {/if}
 
-{#if compañia == true}
-<Compañia on:click={showCompañia}/>
+{#if compania == true}
+<Compania on:click={showCompania}/>
 
 {/if}
 
@@ -79,6 +85,12 @@ tips == false && contacto == false && info == false}
 {#if info == true}
 <Info/>
 <Back on:click={showInfo}/>
+{/if}
+
+{#if contentManager == true}
+<ContentManager/>
+<Back on:click={showContentManager}/>
+
 {/if}
 
 

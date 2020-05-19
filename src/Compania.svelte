@@ -2,7 +2,6 @@
   import { fly} from 'svelte/transition';
   import Comprar from './Comprar.svelte'
   import Back from './Back.svelte'
-  import Compañia from './Compañia.svelte'
 
   let comprar = false
   const showComprar = () => {
