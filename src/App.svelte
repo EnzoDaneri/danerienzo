@@ -39,7 +39,7 @@ tips == false && contacto == false && info == false}
 <div class="containerImg"><img src="./img/en.jpg" alt="Foto de Enzo Daneri"></div>
 <h1><span>Enzo</span> Daneri</h1>
 
-<div class="btn" on:click={showProgramacion}>Programación</div>
+<div class="btn" on:click={showProgramacion}>Programador</div>
 <div class="btn" on:click={showCompañia}>Virtual Buddy</div>
 <div class="btn">Blog</div>
 

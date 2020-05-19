@@ -160,7 +160,10 @@
   /* ################### TABLETS ############################### */
 
   @media (min-width: 500px){
-   
+    
+    .container {
+		  margin-top: 50px;
+	  }
 
     .container h1 {
       font-size: 50px;

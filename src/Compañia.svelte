@@ -99,6 +99,11 @@ i {
    /* ################### TABLETS ############################### */
 
   @media (min-width: 500px) {
+    
+     .container {
+		  margin-top: 50px;
+	  }
+
 
     .card {
       width: 450px;

@@ -84,4 +84,24 @@
 
   }
 
+
+   /* ################### TABLETS ############################### */
+
+  @media (min-width: 500px) {
+	  .container {
+          margin-top: 50px;
+          font-size: 20px;
+	  }
+
+	  .container h1 {
+		  font-size: 40px;
+	  }
+
+	 .container img {
+		 width: 130px;
+         border: 5px solid rgba(78, 158, 250, 0.568);
+
+     }
+  }
+
 </style>

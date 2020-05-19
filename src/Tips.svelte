@@ -3,9 +3,9 @@ import { fly} from 'svelte/transition';
 
 
 </script>
+<div class="icon"><i class="fas fa-check"></i></div>
 
 <div in:fly="{{x: -300, duration: 600}}" class="containerTips">
-<i class="fas fa-check"></i>
 
 <div class="tipUno"><p> La Puntualidad siempre es una hermosa virtud ... practícala! </p> </div>
 
@@ -21,10 +21,17 @@ import { fly} from 'svelte/transition';
 
 
 <style>
-.containerTips i {
+
+.icon {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -35px;
+}
+ 
+ i {
     font-size: 30px;
     color: rgba(78, 158, 250, 0.897);
-
+    
 }
 
 .containerTips {
