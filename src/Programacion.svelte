@@ -65,7 +65,7 @@
     margin-bottom: 90px;
   }
 
-.container h1, h2 {
+.container h1 {
  font-family: "Satisfy", cursive;
  font-weight: normal;
 
@@ -156,5 +156,26 @@
     margin: 7px;
     margin-bottom: 20px;
   }
+
+  /* ################### TABLETS ############################### */
+
+  @media (min-width: 500px){
+   
+
+    .container h1 {
+      font-size: 50px;
+    }
+
+    .cardTres {
+      width: 450px;
+    }
+    .card, .cardDos {
+       width: 450px;
+      grid-template-columns: 1fr 2fr; 
+
+
+    }
+  }
+
 
   </style>

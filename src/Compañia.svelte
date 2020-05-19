@@ -1,9 +1,17 @@
 <script>
   import { fly} from 'svelte/transition';
+  import Comprar from './Comprar.svelte'
+  import Back from './Back.svelte'
+  import Compañia from './Compañia.svelte'
 
+  let comprar = false
+  const showComprar = () => {
+    comprar = !comprar
+  }
 
 </script>
 
+{#if comprar == false}
 
 <div class="container" in:fly="{{x:-300, duration: 600}}">
 
@@ -16,14 +24,21 @@
 
  <p>Acompañamiento Virtual para tu vida. </p>
  <i class="fas fa-globe-americas" ></i>
- <p>Desde Argentina para cualquier lugar del mundo</p>
+ <p>Para cualquier lugar del mundo</p>
  
-  <div class="btn">Comprar</div>
-
+  <div class="btn" on:click={showComprar}>Comprar</div>
 </div>
 
-</div><br><br>
 </div>
+</div>
+<Back on:click/>
+
+{/if}
+
+{#if comprar == true}
+  <Comprar/>
+  <Back on:click={showComprar}/>
+{/if}
 
 <style>
 
@@ -38,7 +53,7 @@ i {
     margin-top: 20px;
      font-weight: normal;
      color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
 }
 .container h1, h2 {
        font-family: "Satisfy", cursive;
@@ -79,6 +94,19 @@ i {
     border: 2px solid rgb(78, 158, 250);
     border-radius: 5px;
     font-weight: bold;
+  }
+
+   /* ################### TABLETS ############################### */
+
+  @media (min-width: 500px) {
+
+    .card {
+      width: 450px;
+    }
+
+    .container h1 {
+      font-size: 50px;
+    }
   }
  
      

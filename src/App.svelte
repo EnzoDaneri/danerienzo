@@ -3,10 +3,15 @@
   import Programacion from './Programacion.svelte';
   import Back from './Back.svelte'
   import Compañia from './Compañia.svelte'
-
+  import Tips from './Tips.svelte'
+  import Contacto from './Contacto.svelte'
+  import Info from './Info.svelte'
 
   let programacion = false
   let compañia = false
+  let tips = false
+  let contacto = false
+  let info = false
 
   const showProgramacion = () => {
 	  programacion = !programacion
@@ -14,26 +19,36 @@
   const showCompañia = () => {
 	  compañia = !compañia
   }
+  const showTips = () => {
+	  tips = !tips
+  }
+  const showContacto = () => {
+	  contacto = !contacto
+  }
+  const showInfo = () => {
+	  info = !info
+  }
 
 </script>
 
 
-{#if programacion == false && compañia == false}
+{#if programacion == false && compañia == false && 
+tips == false && contacto == false && info == false}
 
 <div class="container"  in:fade>
-<div class="containerImg"><img src="./img/en.jpg" alt=""></div>
+<div class="containerImg"><img src="./img/en.jpg" alt="Foto de Enzo Daneri"></div>
 <h1><span>Enzo</span> Daneri</h1>
 
-<div class="btnUno" on:click={showProgramacion}>Programación</div>
-<div class="btnDos" on:click={showCompañia}>Virtual Buddy</div>
-<div class="btnTres">Metas App</div>
+<div class="btn" on:click={showProgramacion}>Programación</div>
+<div class="btn" on:click={showCompañia}>Virtual Buddy</div>
+<div class="btn">Blog</div>
 
 
   <footer>
    <div class="footerCont">
-    <span >Contacto</span>
-    <span ><i class="fas fa-check"></i> Tips</span>
-    <span >Info</span>
+    <span on:click={showContacto}>Contacto</span>
+    <span on:click={showTips} ><i class="fas fa-check"></i> Tips</span>
+    <span on:click={showInfo} >Info</span>
    </div>
    </footer>
 
@@ -48,9 +63,24 @@
 
 {#if compañia == true}
 <Compañia on:click={showCompañia}/>
-<Back on:click={showCompañia}/>
 
 {/if}
+
+{#if  tips == true}
+ <Tips/>
+ <Back on:click={showTips}/>
+{/if}
+
+{#if contacto == true}
+<Contacto/>
+ <Back on:click={showContacto}/>
+{/if}
+
+{#if info == true}
+<Info/>
+<Back on:click={showInfo}/>
+{/if}
+
 
 <style>
 .container {
@@ -73,9 +103,11 @@
 .container img {
 	border-radius: 50%;
 	width: 100px;
+    border: 5px solid rgba(78, 158, 250, 0.568);
+
 }
 
-.btnUno {
+.btn {
 	width: 270px;
 	height: 60px;
 	background: rgba(51, 51, 51, 0.959);
@@ -89,34 +121,6 @@
 	font-family: "Comfortaa", cursive;
 	font-size: 20px;
 
-}
-.btnDos {
-	width: 270px;
-	height: 60px;
-	background: rgba(51, 51, 51, 0.959);
-	margin: 10px auto;
-	border-radius: 5px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	font-family: "Comfortaa", cursive;
-	font-size: 20px;
-}
-.btnTres {
-	width: 270px;
-	height: 60px;
-	background: #333;
-	margin: 10px auto;
-	border-radius: 5px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	font-family: "Comfortaa", cursive;
-	font-size: 20px;
 }
 
 
@@ -138,5 +142,34 @@ footer span {
     cursor: pointer;
 	margin: 20px;
 }
+
+
+   /* ################### TABLETS ############################### */
+
+  @media (min-width: 500px) {
+	  .container {
+		  margin-top: 50px;
+	  }
+
+	  .container h1 {
+		  font-size: 60px;
+	  }
+	 .btn {
+		 width: 450px;
+	 } 
+	 .container img {
+		 width: 130px;
+         border: 5px solid rgba(78, 158, 250, 0.568);
+
+	 }
+
+footer span {
+    cursor: pointer;
+	margin: 50px;
+	font-weight: bold;
+}
+
+
+  }
 
 </style>

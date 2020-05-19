@@ -6,17 +6,17 @@
 
 <div class="tabs" on:click  >
     <i class="fas fa-arrow-left"></i>
-     </div>
 
+     </div>
 
      <style>
      
      
 .tabs{
    
-    height:60px;
+    height:55px;
     width: 100%;
-    background-color:#333;
+    background: #333;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -25,8 +25,11 @@
    justify-content: space-around;
    font-family: "Comfortaa", cursive;
    cursor: pointer;
+
    
 }
+
+
 .tabs i {
    color:#fff;
   font-size: 25px;
