@@ -134,6 +134,9 @@
    height: 80px;
    width: 100px;
  }
+ a {
+   text-decoration: none;
+ }
   
 .cardTres {
   background:  rgba(78, 158, 250, 0.192);
