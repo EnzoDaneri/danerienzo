@@ -40,12 +40,7 @@ const programacion = [
   {"title": "Slider con cuadro de texto",
   "description": "Componente de UI realizado en Html, Css y Javascript",
   "url": "https://enzodaneri.github.io/slider/"
-  },
-  {"title": "Slider Component",
-  "description": "Componente de UI realizado en Html, Css y Javascript",
-  "url": "https://enzodaneri.github.io/slider2/"
-  },
-
+  }
 
 ]
 
