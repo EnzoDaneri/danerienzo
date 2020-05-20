@@ -77,7 +77,7 @@ import { fly} from 'svelte/transition';
    
 .containerTips {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
    margin-bottom: 90px;
 }
 }

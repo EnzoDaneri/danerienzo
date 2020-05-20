@@ -106,7 +106,7 @@ tips == false && contacto == false && info == false
 .container h1 {
 	font-family: "Satisfy", cursive;
 	font-weight: normal;
-	font-size: 50px;
+	font-size: 45px;
 	color: #333;
 	margin: 20px;
 	margin-top: 8px;

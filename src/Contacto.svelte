@@ -91,6 +91,7 @@
 	  .container {
           margin-top: 50px;
           font-size: 20px;
+        
 	  }
 
 	  .container h1 {
@@ -101,6 +102,9 @@
 		 width: 130px;
          border: 5px solid rgba(78, 158, 250, 0.568);
 
+     }
+     .card {
+         width: 450px;
      }
   }
 
