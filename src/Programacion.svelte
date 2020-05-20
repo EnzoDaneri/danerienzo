@@ -34,13 +34,14 @@
 
 {#if portfolio == true}
 
-{#each programacion as algo, index}
+{#each programacion as project, index}
 <div in:fade> 
 <div class={index% 2 == 0 ? "card" : "cardDos"}>
 <div class="card-content">
-<div class="verLink">Ver</div>
+<a href={project.url}><div class="verLink">Ver</div>
+</a>
 </div>
-<p>Componente UI.Html, Css y JavaScript</p>
+<p>{project.title}</p>
 
 </div>
 </div>
@@ -80,7 +81,10 @@
       border-radius: 5px;
       font-family: "Comfortaa", cursive;
       display:grid;
-      grid-template-columns: 2fr 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      height: 80px;
+      display: flex;
+      align-items: center;
 
   }
    .cardDos {
@@ -89,13 +93,18 @@
       margin: 10px auto;
       border-radius: 5px;
       display:grid;
-      grid-template-columns: 2fr 1fr; 
+      grid-template-columns: 1fr 1fr; 
       font-family: "Comfortaa", cursive;
+       height: 80px;
+      display: flex;
+      align-items: center;
+
 
   }
   .card p, .cardDos p {
-    font-size: 18px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 10px;
+    margin: auto;
 
   }
      
@@ -108,7 +117,8 @@
    align-items: center;
    justify-content: center;
    cursor: pointer;
-   height: 100%;
+   height: 80px;
+   width: 100px;
 
 
  }    
@@ -121,7 +131,8 @@
    align-items: center;
    justify-content: center;
    cursor: pointer;
-   height: 100%;
+   height: 80px;
+   width: 100px;
  }
   
 .cardTres {
@@ -149,6 +160,7 @@
     font-family: "Comfortaa", cursive;
 
   }
+ 
 
   .icons i{
     font-size: 30px;
