@@ -44,6 +44,7 @@ tips == false && contacto == false && info == false
 <div class="container"  in:fade>
 <div class="containerImg"><img src="./img/en.jpg" alt="Foto de Enzo Daneri"></div>
 <h1><span>Enzo</span> Daneri</h1>
+<h2>Servicios Remotos</h2>
 
 <div class="btn" on:click={showProgramacion}>Programador</div>
 <div class="btn" on:click={showCompania}>Virtual Buddy</div>
@@ -108,9 +109,17 @@ tips == false && contacto == false && info == false
 	font-size: 50px;
 	color: #333;
 	margin: 20px;
+	margin-top: 8px;
 }
 .container span {
 	color: rgba(78, 158, 250, 0.897);
+}
+.container h2 {
+	font-family: "Satisfy", cursive;
+	font-weight: normal;
+	color: rgba(78, 158, 250, 0.897);
+	margin-top: -10px;
+
 }
 .container img {
 	border-radius: 50%;
