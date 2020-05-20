@@ -125,10 +125,10 @@
  }
   
 .cardTres {
-     background:  rgba(78, 158, 250, 0.192);
+  background:  rgba(78, 158, 250, 0.192);
   width: 270px;
   margin:  auto;
-    margin-top: 20px;
+  margin-top: 20px;
 
 }
 .cardTres p {
@@ -160,7 +160,7 @@
   /* ################### TABLETS ############################### */
 
   @media (min-width: 500px){
-    
+
     .container {
 		  margin-top: 50px;
 	  }
