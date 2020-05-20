@@ -1,5 +1,11 @@
+<script>
+  import { fly, fade} from 'svelte/transition';
 
-<div class="container">
+
+</script>
+
+
+<div class="container"  in:fly="{{x:-300, duration: 600}}">
 <h1>Content <span>Manager</span></h1>
 
 
