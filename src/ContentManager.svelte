@@ -6,13 +6,13 @@
 
 
 <div class="container"  in:fly="{{x:-300, duration: 600}}">
-<h1>Content <span>Manager</span></h1>
+<h1>Copywriter</h1>
 
 
 <div class="card">
 <div class="card-content">
 <i class="fas fa-feather-alt"></i>
-<p> Creación y Manejo de Contenidos para Empresas</p>
+<p> Creación de Contenidos para Empresas</p>
     <div class="icons"><a href="https://github.com/EnzoDaneri" target="blank"><i class="fab fa-github"></i></a>
      <a href="https://www.linkedin.com/in/enzo-adri%C3%A1n-daneri-desarrollo-web/"target="blank"><i class="fab fa-linkedin-in"></i></a>
      <a href="https://www.facebook.com/enzodaneri"target="blank"><i class="fab fa-facebook-f"></i></a>

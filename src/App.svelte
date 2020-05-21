@@ -48,7 +48,7 @@ tips == false && contacto == false && info == false
 
 <div class="btn" on:click={showProgramacion}>Programador</div>
 <div class="btn" on:click={showCompania}>Virtual Buddy</div>
-<div class="btn" on:click={showContentManager}>Content Manager</div>
+<div class="btn" on:click={showContentManager}>Copywriter</div>
 
 
   <footer>
